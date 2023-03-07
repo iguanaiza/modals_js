@@ -1,4 +1,6 @@
 # modals_js
+iguanaiza.github.io/modals_js/
+
 Trying to create modals.
 
 I created 4 modals - confirm, info, warning and error.
