@@ -201,7 +201,7 @@ p {
 }
 
 /*ERROR MODAL */
-#warning {
+#error {
     box-shadow: 0 0 20px 0 rgba(238, 44, 30,0.6);
 }
 
