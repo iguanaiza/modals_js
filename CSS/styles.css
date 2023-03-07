@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    min-width: 250px;
+    max-width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    z-index:2;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+img {
+    position: absolute;
+    min-width: none;
+    filter: invert();
+    margin: 10px;
+    width: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    img {
+        width: 30px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+}
+
+p {
+    padding: 10px;
+}
+
+.btn-confirm {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 235, 215, 0.13);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+/*CONFIRM MODAL */
+#confirm {
+    box-shadow: 0 0 20px 0 rgba(31, 196, 113, 0.6);
+}
+
+.confirm-header {
+    background-color: rgb(31, 196, 113);
+}
+
+#confirm-btn {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(31, 196, 113);
+    box-shadow: 0 0 10px 0 rgba(31, 196, 113, 0.6);
+}
+
+#confirm-btn:hover {
+    background-color: rgba(31, 196, 113, 0.6);
+    cursor: pointer;
+}
+
+.btn-confirm-confirm {
+    background-color: rgb(31, 196, 113);
+    box-shadow: 0 0 10px 0 rgba(31, 196, 113, 0.6);
+}
+
+.btn-confirm-confirm:hover {
+    background-color: rgba(31, 196, 113, 0.6);
+    cursor: pointer;
+}
+
+/*INFO MODAL */
+#info {
+    box-shadow: 0 0 20px 0 rgba(87, 191, 252,0.6);
+}
+
+.info-header {
+    background-color: rgb(87, 191, 252);
+}
+
+#info-btn {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(87, 191, 252,1);
+    box-shadow: 0 0 10px 0 rgba(87, 191, 252,0.6);
+}
+
+#info-btn:hover {
+    background-color: rgba(87, 191, 252,0.6);
+    cursor: pointer;
+}
+
+.btn-confirm-info {
+    background-color: rgba(87, 191, 252,1);
+    box-shadow: 0 0 10px 0 rgba(87, 191, 252,0.6);
+}
+
+.btn-confirm-info:hover {
+    background-color: rgba(87, 191, 252,0.6);
+    cursor: pointer;
+}
+
+/*WARNING MODAL */
+#warning {
+    box-shadow: 0 0 20px 0 rgba(241, 187, 8, 0.6);
+}
+
+.warning-header {
+    background-color: rgb(241, 187, 8);
+}
+
+#warning-btn {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(241, 187, 8);
+    box-shadow: 0 0 10px 0 rgba(241, 187, 8, 0.6);
+}
+
+#warning-btn:hover {
+    background-color: rgba(241, 187, 8, 0.6);
+    cursor: pointer;
+}
+
+.btn-confirm-warning {
+    background-color: rgb(241, 187, 8);
+    box-shadow: 0 0 10px 0 rgba(241, 187, 8, 0.6);
+}
+
+.btn-confirm-warning:hover {
+    background-color: rgba(241, 187, 8, 0.6);
+    cursor: pointer;
+}
+
+/*ERROR MODAL */
+#warning {
+    box-shadow: 0 0 20px 0 rgba(238, 44, 30,0.6);
+}
+
+.error-header {
+    background-color: rgb(238, 44, 30);
+}
+
+#error-btn {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(238, 44, 30);
+    box-shadow: 0 0 10px 0 rgba(238, 44, 30,0.6);
+}
+
+#error-btn:hover {
+    background-color: rgba(238, 44, 30,0.6);
+    cursor: pointer;
+}
+
+.btn-confirm-error {
+    background-color: rgb(238, 44, 30);
+    box-shadow: 0 0 10px 0 rgba(238, 44, 30,0.6);
+}
+
+.btn-confirm-warning:hover {
+    background-color: rgba(238, 44, 30,0.6);
+    cursor: pointer;
+}
