@@ -3,7 +3,6 @@ const overlay = document.querySelector(".overlay");
 //CONFIRM MODAL================================
 const modalConfirm = document.getElementById("confirm");
 const btnOpenConfirm = document.getElementById("confirm-btn");
-const btnConfirmConfirm = document.querySelector(".btn-confirm-confirm");
 
 const closeModalConfirm = function () {
     modalConfirm.classList.remove("hidden");
